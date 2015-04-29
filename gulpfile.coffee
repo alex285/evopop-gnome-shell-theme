@@ -10,13 +10,13 @@ buildName = 'Evopop'
 gulp.task 'build', ->
 	
 	fs.mkdirsSync buildDir
-	fs.copySync './assets/', buildDir+'/assets'
+	fs.copy './assets/', buildDir+'/assets', (err) ->
 	
 	gulp.src './stylus/gnome-shell.styl'
-  .pipe(stylus(compress: true))  
+	.pipe(stylus(compress: true))  
   .pipe(gulp.dest buildDir)
   #.pipe(notify 'Build Done Succesfylly ᕙ(`▿´)ᕗ' ) #To test notifications styles
-		
+	
 	
 gulp.task 'build-nocompress', ->
 	gulp.src './stylus/gnome-shell.styl'
@@ -25,7 +25,7 @@ gulp.task 'build-nocompress', ->
 	
 gulp.task 'install', ->
 	fs.mkdirsSync process.env.HOME+'/.themes'
-	fs.copySync './dist/', process.env.HOME + '/.themes' #Cant pass an err check to a sync 
+	fs.copy './dist/', process.env.HOME + '/.themes', (err)-> #Cant pass an err check to a sync 
 	
     
 gulp.task 'run', ->
