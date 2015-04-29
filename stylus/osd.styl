@@ -1,0 +1,132 @@
+.osd-panel
+  color gray-lighter
+  background-color gray-base
+  border 1px solid darken(gray-base, 10%)
+  border-radius 3px
+  padding 5px
+
+.osd-window	
+	background gray-base
+	text-align center
+	font-weight bold
+	spacing 1em
+	font-size 1.1em
+	margin 32px
+	min-width 64px
+	min-height 64px
+	border-radius 3px
+	.osd-monitor-label  
+		font-size 3em
+	.level 
+		height 0.6em
+		border-radius 0.3em
+		background-color darken(gray-lighter, 30%)
+		color blue-light
+
+
+/* App Switcher */
+/*
+.switcher-popup {
+  padding: 8px;
+  spacing: 16px;
+}
+
+.osd-window,
+.resize-popup,
+.switcher-list {
+  @extend %osd-panel;
+}
+
+  .switcher-list-item-container { spacing: 8px;  }
+
+  .switcher-list .item-box {
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .switcher-list .item-box:outlined {
+    padding: 6px;
+    border: 2px solid darken($borders_color,10%);
+  }
+
+  .switcher-list .item-box:selected {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+  }
+
+  .switcher-list .thumbnail-box {
+    padding: 2px;
+    spacing: 4px;
+  }
+
+  .switcher-list .thumbnail {
+    width:  256px;
+  }
+
+  .switcher-list .separator {
+    width: 1px;
+    background: $borders_color;
+  }
+
+  .switcher-arrow {
+    border-color: rgba(0,0,0,0);
+    color: $borders_color;
+  }
+
+  .switcher-arrow:highlighted {
+    color: $fg_color;
+  }
+
+  .input-source-switcher-symbol {
+    font-size: 34pt;
+    width: 96px;
+    height: 96px;
+  }
+*/
+
+
+.workspace-switcher-group 
+	padding 12px
+	
+	/*
+
+  .workspace-switcher-container {
+    @extend %osd-panel;
+  }
+*/
+.workspace-switcher 
+	border 0px
+	border-radius 3px
+	padding 0px
+	spacing 8px
+  
+
+
+.ws-switcher-active-up
+	height 50px
+	background-color cyan-base
+	color gray-lighter
+	background-image url("assets/ws-switch-arrow-up.svg")
+	background-size 32px
+	border-radius 3px
+	
+.ws-switcher-active-down
+	background-color cyan-base
+	background-image url("assets/ws-switch-arrow-down.svg") 
+	color gray-lighter
+
+.ws-switcher-box 
+	height: 50px
+	border: none
+	background transparent
+	border-radius: 3px
+
+	/*
+%osd-panel {
+  color: $_bubble_fg_color;
+  background-color: $_bubble_bg_color;
+  border: 1px solid $_bubble_borders_color;
+  border-radius: 12px;
+  padding: 12px;
+}
+*/
