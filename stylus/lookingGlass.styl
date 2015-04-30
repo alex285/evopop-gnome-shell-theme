@@ -1,52 +1,76 @@
-/*
-#LookingGlassDialog 
+
+#LookingGlassDialog
 	background-color gray-base
 	color gray-lighter
 	spacing 4px
-	padding 4px
-	border 1px solid darken(gray-base, 10%)
-	border-radius: 3px
-	& > #Toolbar 
+	padding 6px
+	border 3px solid blue-light
+	border-radius 3px
+	& > #Toolbar
 		border none
 		padding 10px
-
-
-	.labels  
+		border-radius 0px
+	.labels
 		spacing: 4px
-		
-	.notebook-tab 
+	.notebook-tab
 		-natural-hpadding 12px
 		-minimum-hpadding 6px
 		font-weight bold
 		color #ccc
 		transition-duration 100ms
 		padding 10px
-		&:hover 
+		&:hover
 			color blue-light
-			text-shadow black 0px 2px 2px			
-		&:selected 
+			text-shadow black 0px 2px 2px
+		&:selected
 			border none
-			//border-color lighten($selected_bg_color,5%);
 			color cyan-base
 			text-shadow: black 0px 2px 2px
-			
-
-	
-	StBoxLayout#EvalBox  
+	StBoxLayout#EvalBox
 		padding 4px
 		spacing 4px
 	StBoxLayout#ResultsArea
 		spacing 4px
-		
+
 #lookingGlassExtensions
-	background rgba(0,0,0,0.1)
-	
+	background gray-base
+	padding 20px
+	font-size 13px
+
 .lg-extensions-list
 	padding 4px
-	spacing 10px	
-	
-.lg-extension 
-	background gray-lighter
-	color gray-base
-	
-	*/
+	spacing 10px
+
+.lg-extension
+	background lighten(gray-base, 7%)
+	color gray-lighter
+	border-radius 3px
+	padding 10px
+	border none
+	border 1px solid darken(gray-base, 7%)
+
+ .lg-extension-name
+	 font-weight bold
+	 font-size 18px
+	 color blue-light
+	 padding 5px
+	 padding-left 0px
+
+ .lg-extension-meta
+	 spacing 6px
+	 padding-top 20px
+	 color blue-light
+	 font-weight bold
+
+.lg-dialog
+	StEntry
+		selection-background-color blue-light
+		selected-color gray-lighter
+		.shell-link
+			color gray-base
+			&:hover
+				color blue-light
+
+#LookingGlassDialog
+	#Windows
+		padding 10px
