@@ -1,6 +1,6 @@
 //Switches
 
-.toggle-switch 
+.toggle-switch
   width 65px
   height 22px
   background-size contain
@@ -10,45 +10,39 @@
 	background url(switch-off-img)
 	&:checked
 		background-image url(switch-on-img)
-		
+
 
 .toggle-switch-intl
 	background url(switch-intl-off-img)
 	&:checked
-		background url('switch-inlt-on-img')
-		
-		
-		
-.slider 
+		background url('switch-inlt-on-img')		
+
+.slider
 	color blue-light
 	height 1em
 	-slider-height 4px //0.4em
 	-slider-background-color darken(popup-bg-c, 13%) // 8%  popup-submenu
 	-slider-border-color  #ccc //no need border
-	-slider-active-background-color blue-light 
-	-slider-active-border-color darken(#ccc,10%) 
+	-slider-active-background-color blue-light
+	-slider-active-border-color darken(#ccc,10%)
 	-slider-border-width 0px
-	-slider-handle-radius 6px 
+	-slider-handle-radius 6px
 
 
 
-.check-box 
-	StBoxLayout 
+.check-box
+	StBoxLayout
 		spacing .8em
-	StBin 
+	StBin
 		width 22px
 		height 22px
-		background-image url(checkbox-off-img)  
-	&:focus 
-		StBin 
-			background-image: url(checkbox-off-focused-img) 
-	&:checked 
-		StBin 
+		background-image url(checkbox-off-img)
+	&:focus
+		StBin
+			background-image: url(checkbox-off-focused-img)
+	&:checked
+		StBin
 		background-image: url(checkbox-img)
-	&:focus:checked 
-		StBin 
+	&:focus:checked
+		StBin
 			background-image: url(checkbox-focused-img)
-	
-
-
-
