@@ -2,19 +2,19 @@
 
 .button
   border-radius 3px
-  padding 8px 32px
+  border none
+  padding 9px 32px
   color gray-light
   background-color darken(gray-lighter, 10%)
-  box-shadow none
-  border none
-  text-shadow none
-  icon-shadow none
+  box-shadow: inset 0 1px darken(gray-lighter, 10%)
+  text-shadow 0px transparent
+  //icon-shadow none
   font-weight bold
   &:active
   &:focus
   &:hover
     background blue-light
     color gray-lighter
-    border-color darken(blue-light,20%)
+    box-shadow: inset 0 1px blue-light
   &:insensitive
     color gray-light
