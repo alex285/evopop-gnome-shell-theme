@@ -1,6 +1,7 @@
 .notification-banner
 	font-size 10pt
 	width 30em
+	text-shadow none
 	background-color gray-lighter
 	border 1px solid darken(gray-lighter, 10%)
 	border-radius 3px //or 0 ?
@@ -12,13 +13,13 @@
 		icon-size 1em//what that does?
 
 	.notification-actions
-		background transparent //border color
+		background #fff //border color
 		color gray-lighter
 		font-weight bold
 
 	.notification-button
 		padding 8px 0
-		background cyan-base
+		background #f4f4f4
 		&:hover
 			background blue-light
 
@@ -61,7 +62,7 @@
 	&:focus
 		font-size 10pt
 		color gray-base
-		background #f4f4f4;
+		background #f4f4f4
 
 .message-icon-bin
 	padding 2px 0px 5px 5px
@@ -71,10 +72,15 @@
 .message-icon-bin StIcon
 	icon-size 48px
 
-
-//Message List
 .message-list
 	width 420px
+
+.message-title
+	font-weight bold
+	text-shadow 0px 0px transparent //wtf?
+
+.message-content
+	padding 8px
 
 .message-list-section
 .message-list-section-list
