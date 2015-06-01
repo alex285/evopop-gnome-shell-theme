@@ -46,28 +46,23 @@
 	padding 8px 10px
 	&:hover
 	&:focus
-		background-color blue-light
-		color gray-lighter
 	&:active
-		color gray-lighter
-		background-color blue-light
+		background darken(gray-lighter, 10%)
+		color gray-base
 	&:last-child
 		background blue-light
 		padding 7px 10px 5px 10px //40px doesnt really matter, just take full padding
 		color gray-lighter
 		border-radius 3px
-		&:hover
-			background blue-light
-
 
 .datemenu-today-button
-	padding 10px 0 0 0
+	padding 10px
 	color gray-base
 	&:hover
 	&:focus
 	&:active
-		background none
-		color blue-light
+		background darken(gray-lighter, 10%)
+		transition-duration 200ms
 
 
 .message-list-section-title
