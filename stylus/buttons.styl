@@ -1,37 +1,20 @@
 //fix that with mixins
 
-.button 
+.button
   border-radius 3px
-  border-width 1px
-  padding 8px 32px	
-  color gray-lighter	
-  background-color cyan-base
-  border-color darken(cyan-base,10%)
-  box-shadow: inset 0 1px cyan-base
-  text-shadow: 0 1px cyan-base
-  icon-shadow: 0 1px cyan-base
-
-
-.button:focus
-	background blue-light
-	border-color darken(blue-light,20%)	
-
-.button:insensitive 
-	color gray-base
-	border-color darken(gray-lighter, 10%);
-	background-color gray-lighter
-	box-shadow none
-	text-shadow none
-	icon-shadow none 
-
-
-.button:active 
-	color gray-lighter
-	border-color darken(cyan-base,20%)
-	background-color darken(cyan-base,10%)
-	text-shadow none
-	icon-shadow none 
-
-.button:hover
-	background blue-light
-	border-color darken(blue-light,20%)
+  padding 8px 32px
+  color gray-light
+  background-color darken(gray-lighter, 10%)
+  box-shadow none
+  border none
+  text-shadow none
+  icon-shadow none
+  font-weight bold
+  &:active
+  &:focus
+  &:hover
+    background blue-light
+    color gray-lighter
+    border-color darken(blue-light,20%)
+  &:insensitive
+    color gray-light
