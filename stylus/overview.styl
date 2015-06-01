@@ -2,24 +2,23 @@
 	background gray-lighter
 	color gray-base
 	font-weight bold
-	border 1px solid darken(gray-lighter, 10%)
+	font-size 1.0em
+	border none
 	box-shadow none
-	padding 10px 40px
+	padding 10px 25px
 	border-radius 0px
 	&:active
-	&:checked	
-		background cyan-darker
+	&:checked
+		background blue-light
 		color gray-lighter
-		border 1px solid darken(gray-lighter, 10%)
-		
-		
+
 .window-close
-	 background-size 32px
-	 width 32px
-	 height 32px
-	 background-image url(close-window-img)
-	 
-#overview 
+	background-size 32px
+	width 32px
+	height 32px
+	backgroundurl(close-window-img) 0 0
+
+#overview
 	spacing 24px
 
 // LETS TRY THIS
@@ -37,24 +36,24 @@
 			background gray-lighter
 			height 96px
 			width 96px
-			& StIcon 	
+			& StIcon
 				height 140px
 				width 140px
-*/		
-	
-.overview-controls 
+*/
+
+.overview-controls
 	padding-bottom 32px
-	
+
 .window-picker  //container around window thumbnails
 	-horizontal-spacing 32px
 	-vertical-spacing 32px
 	padding-left 32px
 	padding-right 32px
 	padding-bottom 48px
-		&.external-monitor 
+		&.external-monitor
 			padding 32px
-			
-.window-clone-border 
+
+.window-clone-border
 	border 4px solid blue-dark
 	border-radius 3px
 	// For window decorations with round corners we can't match
@@ -63,25 +62,25 @@
 	box-shadow: inset 0px 0px 0px 1px blue-dark
 	//border none
 	//border-left 5px solid blue-dark
-	//background rgba(0,0,0,0.1) //pff, bs too	
-	
+	//background rgba(0,0,0,0.1) //pff, bs too
 
-.window-caption 
-	spacing 25px //what that does? 
+
+.window-caption
+	spacing 25px //what that does?
 	font-size 1.1em
 	font-weight bold
 	border-radius 3px
 	background-color gray-light
 	padding 6px 15px
-	border 1px solid darken(gray-light, 10%)	
+	border 1px solid darken(gray-light, 10%)
 	-shell-caption-spacing 12px
 	&:hover
 		background-color blue-dark
 		color gray-lighter
 		border 1px solid darken(blue-dark, 10%)
-		
-		
-.search-entry 
+
+
+.search-entry
 	font-size 1.1em
 	font-weight bold
 	width 340px
@@ -90,30 +89,30 @@
 	color popup-fg-c
 	background popup-bg-c
 	//border 1px solid #444
-	&:focus 
+	&:focus
 		padding 7px 8px
 		border-width 2px
 		color popup-fg-c
-		background popup-bg-c			
+		background popup-bg-c
 	.search-entry-icon
-		icon-size 1.1em 
-		padding 0 4px 
+		icon-size 1.1em
+		padding 0 4px
 		color gray-base
-	&:focus		
+	&:focus
 		.search-entry-icon
 			color cyan-base
-			
-			
-			
+
+
+
 .app-well-app-running-dot  //running apps indicator
-	width 24px 
+	width 24px
 	height 3px
 	background-color blue-light
 	margin-bottom 2px
 
-			
-			
-.icon-grid 
+
+
+.icon-grid
 	spacing 10px
 	-shell-grid-horizontal-item-size 136px
 	-shell-grid-vertical-item-size 136px
@@ -125,16 +124,13 @@
 	padding 10px
 	border-radius 3px
 	max-width 2000px
-	
+
 .app-well-app
 	background blue-light
 	border-radius 3px
 
-		
-		
-/*	
-Search resluts	
-*/	
-  		
-			
 
+
+/*
+Search resluts
+*/
