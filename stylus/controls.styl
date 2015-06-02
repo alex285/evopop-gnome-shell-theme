@@ -15,7 +15,7 @@
 .toggle-switch-intl
 	background url(switch-intl-off-img)
 	&:checked
-		background url('switch-inlt-on-img')		
+		background url('switch-inlt-on-img')
 
 .slider
 	color blue-light
@@ -27,8 +27,6 @@
 	-slider-active-border-color darken(#ccc,10%)
 	-slider-border-width 0px
 	-slider-handle-radius 6px
-
-
 
 .check-box
 	StBoxLayout
@@ -46,3 +44,35 @@
 	&:focus:checked
 		StBin
 			background-image: url(checkbox-focused-img)
+
+/* need to fix this together with overview search
+StEntry
+  border-radius 3px
+  padding 4px
+  border-width 1px
+  color gray-base
+  background-color gray-lighter
+  border-color blue-light
+  selection-background-color blue-light
+  //box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4)
+  selected-color gray-lighter
+  //height 20px
+  box-shadow none
+
+StEntry:focus
+StEntry:hover
+  //box-shadow inset 0 2px 4px rgba(0, 0, 0, 0.4)
+  //border-color rgba(154, 154, 142, 0.5)
+  box-shadow none
+  border-width 1px
+
+StEntry:insensitive
+  color #939695
+  border-color #323636
+  box-shadow none
+
+StEntry StIcon.capslock-warning
+  icon-size 16px
+  warning-color #f57900
+  padding 0 4px
+*/
