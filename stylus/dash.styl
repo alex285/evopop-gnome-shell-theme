@@ -22,11 +22,11 @@
 */
 
 
-
 .show-apps:checked .show-apps-icon
 .show-apps:focus .show-apps-icon
 	color gray-base
 	transition-duration: 100ms;
+
 
 .dash-label
 	border-radius 3px
@@ -35,6 +35,8 @@
 	//background-color: transparentize($osd_bg_color,0.3);
 	text-align center
 	-x-offset 8px
+
+//selection with keyboard dont work?
 
 .app-well-app
 .app-well-app.app-folder
@@ -45,9 +47,14 @@
 	&:hover
 	&:active
 	&:checked
+	&:selected
 		.overview-icon
 			border-radius 3px
 			transition-duration 200ms
 			background gray-lighter
 			color gray-base
 			box-shadow 0 5px 10px 0 rgba(0,0,0,0.5)
+
+.app-well-app-running-dot  //running apps indicator
+	//background-color red
+	margin-bottom 2px
