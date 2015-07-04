@@ -1,33 +1,43 @@
 #panel
 	background-color gray-base
-	height 32px
+	height 38px
+	margin-top 0px
+	font-size 14px
+
+
 
 .panel-corner
 	-panel-corner-radius 0px //bad corners on gtk2
 
 #panelActivities
 	border none
-	background-image url(activities-img)
-	background-size 24px 24px
-	background-position 8px 4px
+	//background-image url(activities-img)
+	//background-size 24px 24px
+	//background-position 8px 4px
 	margin-right 20px
-	color rgba(0,0,0,0.0)
-	width 48px
+	//color rgba(0,0,0,0.0)
+	//width 48px
 	&:hover
-		background-image url(activities-img)
-	&:overview
-		background-image url(activities-img)
+		//background-image url(activities-img)
+	//&:overview
+		//background-image url(activities-img)
 
 .panel-button
 	color gray-lighter
 	&:hover
-		background blue-light
+		transition-duration 200ms
+		background-color: rgba(0, 0, 0, 0.01);
+		box-shadow: inset 0 -3px 0px blue-light
 	&:active
 	&:overview
 	&:focus
 	&:checked
-		background blue-light
-		box-shadow none
+		transition-duration 200ms
+		background-color: rgba(0, 0, 0, 0.01);
+		box-shadow: inset 0 -3px 0px lime-base
+	.system-status-icon
+		icon-size 1.2em
+		padding: 0 5px
 
 .app-menu-icon
 	-st-icon-style $-st-icon-style
@@ -47,3 +57,5 @@
 	height 16px
 .popup-menu-icon
 	icon-size: 1.30em //1.09 default || popovers icons
+
+//.panel-button
